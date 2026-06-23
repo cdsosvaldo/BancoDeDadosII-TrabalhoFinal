@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE GESTÃO - BERÇÁRIO</title>
+    <link rel="stylesheet" href="/web/css/style.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-mark">B</div>
+                <div class="brand-text">
+                    <strong>Berçário</strong>
+                    <span>Sistema de Gestão</span>
+                </div>
+            </div>
+            <nav id="nav" class="nav"></nav>
+            <div class="sidebar-footer">Banco de Dados II · IFPI</div>
+        </aside>
+
+        <main class="content">
+            <header class="content-header">
+                <div>
+                    <h1 id="section-title"></h1>
+                    <p id="section-subtitle"></p>
+                </div>
+                <span class="count-badge"><strong id="count-value">0</strong> registros</span>
+            </header>
+
+            <section class="card">
+                <div class="card-head">
+                    <h2 id="form-title"></h2>
+                </div>
+                <form id="form">
+                    <div id="fields" class="fields-grid"></div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                        <button type="button" class="btn btn-ghost" id="cancel-btn" hidden>Cancelar</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="card">
+                <div class="table-wrap">
+                    <table id="table">
+                        <thead></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div id="empty" class="empty" hidden>Nenhum registro cadastrado ainda.</div>
+            </section>
+        </main>
+    </div>
+
+    <div id="toasts" class="toasts"></div>
+
+    <div id="modal" class="modal" hidden>
+        <div class="modal-box">
+            <h3>Confirmar exclusão</h3>
+            <p id="modal-text"></p>
+            <div class="modal-actions">
+                <button class="btn btn-ghost" id="modal-cancel">Cancelar</button>
+                <button class="btn btn-danger" id="modal-confirm">Excluir</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/web/js/app.js"></script>
+</body>
+</html>
